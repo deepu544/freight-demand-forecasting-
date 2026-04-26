@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Freight Demand Dashboard</title>
+
+    <!-- CSS (optional) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Freight Demand Forecasting Dashboard</h2>
+
+    <!-- FILE UPLOAD -->
+    <input type="file" id="fileInput" accept=".csv">
+
+    <br><br>
+
+    <!-- FILTERS -->
+    <select id="sourceFilter">
+        <option value="">Select Source City</option>
+    </select>
+
+    <select id="destFilter">
+        <option value="">Select Destination City</option>
+    </select>
+
+    <select id="routeFilter">
+        <option value="">Select Route</option>
+    </select>
+
+    <br><br>
+
+    <!-- CHART -->
+    <canvas id="chart" width="800" height="400"></canvas>
+
+</div>
+
+<!-- YOUR SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
